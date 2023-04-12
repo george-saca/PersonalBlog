@@ -1,0 +1,23 @@
+( () =>
+{
+	var elements = document.getElementsByClassName('site-tagline');
+	var requiredElement = elements[0];
+	requiredElement.setAttribute("id", "siteTagline");
+	 // requiredElement.onclick = function(e) 
+	 // {
+		 // alert('clicked')
+	 // }
+	
+	document.getElementById("siteTagline").onclick = function(e) 
+	 {
+		 alert('clicked')
+	 }
+	
+	const myheader = new AutoTyping({
+      id: 'siteTagline',
+      typeText: ['With more than 8 years of experience in designing and implementing distributed systems, libraries, and frameworks in .NET, I blend business acumen with technical depth in a unique way', 'A Text Typing Effect']
+	});
+	
+	myheader.init()
+}
+)();
